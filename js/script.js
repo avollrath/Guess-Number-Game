@@ -8,7 +8,7 @@ const muteButton = document.querySelector('.mute');
 const tries = document.querySelector('.tries');
 let guessCount = 1;
 let resetButton;
-var mute = false;
+var mute = true;
 var themeMusic;
 var wrongSound;
 var winnerSound;
@@ -20,6 +20,7 @@ wrongSound = new sound ('./assets/sounds/wrong.mp3');
 winnerSound = new sound ('./assets/sounds/win.mp3');
 loseSound = new sound ('./assets/sounds/lose.mp3');
 
+themeMusic.play();
 
 
 function sound(src) {
@@ -65,7 +66,7 @@ else {
 
 
 
-themeMusic.play();
+
 guessSubmit.addEventListener('click', checkGuess);
 muteButton.addEventListener('click', muteOnOff);
 

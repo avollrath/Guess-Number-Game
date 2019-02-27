@@ -13,7 +13,7 @@ width: 90vw;
 align-items: center;
 border-radius: 10px;
 color: #efefef;
-height: 80vh;
+height: 85vh;
 margin: 3vh auto;
 position: relative;
 }
@@ -175,6 +175,30 @@ button {
 width: 95vw;
 
 }
+
+.game > h1 {
+
+    font-size: 3.2rem;
+    line-height: 2rem;
+
+}
+
+.game > p {
+
+font-size: 1.4rem;
+
+}
+
+.game > .tries > .circle{ 
+    width: 15px;
+    height: 15px;
+}
+
+.game > .guessSubmit {
+    width: 80%;
+
+}
+
 
 
 }
