@@ -1,6 +1,8 @@
+
+
+// Variables 
+
 let randomNumber = Math.floor(Math.random() * 100) + 1;
-
-
 const lastResult = document.querySelector('.lastResult');
 const guessSubmit = document.querySelector('.guessSubmit');
 const guessField = document.querySelector('.guessField');
@@ -14,6 +16,7 @@ var wrongSound;
 var winnerSound;
 var loseSound;
 
+// ############################### Sound ############################################
 
 themeMusic = new sound ('./assets/sounds/theme.mp3');
 wrongSound = new sound ('./assets/sounds/wrong.mp3');
@@ -21,6 +24,7 @@ winnerSound = new sound ('./assets/sounds/win.mp3');
 loseSound = new sound ('./assets/sounds/lose.mp3');
 
 themeMusic.play();
+guessField.focus();
 
 
 function sound(src) {
@@ -42,7 +46,6 @@ function sound(src) {
 
  
 
-  
 themeMusic.sound.addEventListener('ended', function() {
     this.currentTime = 0;
     this.play();
