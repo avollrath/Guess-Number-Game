@@ -85,7 +85,7 @@ function checkGuess() {
       themeMusic.stop();
       if (mute === false) winnerSound.play();
       setGameOver();
-    } else if (guessCount === 10) {
+    } else if (guessCount === 7) {
       lastResult.textContent = '###!!! GAME OVER LOSER !!!###';
       themeMusic.stop();
       if (mute === false) loseSound.play();
