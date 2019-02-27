@@ -8,7 +8,7 @@ const muteButton = document.querySelector('.mute');
 const tries = document.querySelector('.tries');
 let guessCount = 1;
 let resetButton;
-var mute = true;
+var mute = false;
 var themeMusic;
 var wrongSound;
 var winnerSound;
