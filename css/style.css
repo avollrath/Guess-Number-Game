@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Dokdo|Jura');
+
+
+
+
+
+.game {
+
+background-image: linear-gradient(to bottom right,#24C6DC, #514A9D);
+display: flex;
+flex-direction: column;
+width: 90vw;
+align-items: center;
+border-radius: 10px;
+color: #efefef;
+height: 640px;
+margin: 5vh auto;
+}
+
+.game > h1 {
+
+    font-family: 'Dokdo', cursive;
+    font-weight: normal;
+    font-size: 5.5rem;
+    margin: 7vh 0;
+    text-align: center;
+    line-height: 3.2rem;
+}
+
+.game > p {
+
+    font-family: 'Jura', cursive;    
+    font-size: 2rem;
+    text-align: center;
+}
+
+.game > input {
+
+width: 70%;
+border: none;
+padding: 3px 20px;
+font-size: 2rem;
+margin: 1vh 0;
+font-family: 'Jura', cursive;    
+border-radius: 10px;
+color: #949494;
+text-align: center;
+
+}
+
+.game > input:focus {
+
+outline: none;
+}  
+
+.game > .guessSubmit {
+
+background-color:#efefef;
+width: 50%;
+border: none;
+padding: 3px;
+font-size: 2rem;
+margin: 0vh 0;
+font-family: 'Jura', cursive;  
+border-radius: 3px;  
+color: #fff;
+transition: 200ms;
+background-color: linear-gradient(to bottom right,#f7971e , #ffd200);
+}
+
+.game > .guessSubmit:hover {
+
+cursor: pointer;
+transform: scale(1.05);
+transition: 200ms;
+box-shadow: 3px 3px 9px -2px rgba(38,75,130,1);
+}
+
+.game > button:focus {
+    outline:none;
+}
+
+.game > .tries {
+
+display: flex;
+
+}
+
+
+
+.game > .tries > .circle{
+
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-image: linear-gradient(to bottom right,#f7971e , #ffd200);  
+}
+
+
+button {
+
+    background-color:#efefef;
+    width: 80%;
+    border: none;
+    padding: 3px;
+    font-size: 2rem;
+    margin: auto;
+    font-family: 'Jura', cursive;  
+    border-radius: 3px;  
+    color: #fff;
+    transition: 200ms;
+    background-image: linear-gradient(to bottom right,#f7971e , #ffd200);    
+    display: block;
+}
+
+
+button:hover {
+
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 200ms;
+    box-shadow: 3px 3px 9px -2px rgba(38,75,130,1);
+    }
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+
+.game {
+
+
+    width: 95vw;
+    height: 90vh;
+    margin: 1vh auto;
+    }
+
+}
