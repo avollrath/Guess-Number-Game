@@ -166,8 +166,9 @@ button:hover {
 
 
     width: 95vw;
-    height: 90vh;
+    height: 90%;
     margin: 1vh auto;
+    min-height: 550px;
     }
 
 button {
@@ -196,6 +197,7 @@ font-size: 1.4rem;
 
 .game > .guessSubmit {
     width: 80%;
+    min-height: 50px;
 
 }
 
