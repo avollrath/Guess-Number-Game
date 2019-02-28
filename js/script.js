@@ -15,6 +15,7 @@ var themeMusic;
 var wrongSound;
 var winnerSound;
 var loseSound;
+var laugh;
 
 // ############################### Sound ############################################
 
@@ -22,6 +23,7 @@ themeMusic = new sound ('./assets/sounds/theme.mp3');
 wrongSound = new sound ('./assets/sounds/wrong.mp3');
 winnerSound = new sound ('./assets/sounds/win.mp3');
 loseSound = new sound ('./assets/sounds/lose.mp3');
+laughSound = new sound ('./assets/sounds/laugh.wav');
 
 themeMusic.play();
 guessField.focus();
@@ -91,18 +93,27 @@ function checkGuess() {
     } else if (guessCount === 7) {
       lastResult.textContent = '###!!! GAME OVER LOSER !!!###';
       themeMusic.stop();
-      if (mute === false) loseSound.play();
+      if (mute === false) {
+        loseSound.play();
+        laughSound.play();
+    }
       setGameOver();
     } else {
       
       
       if(userGuess < randomNumber) {
-        if (mute === false) wrongSound.play();
+        if (mute === false) {
+            wrongSound.play();
+            laughSound.play();
+        }
         lastResult.textContent = 'Too low, idiot!';
         guessSubmit.value = 'Check again';
 
       } else if(userGuess > randomNumber) {
-        if (mute === false) wrongSound.play();
+        if (mute === false) {
+          wrongSound.play();
+          laughSound.play();
+      }
         lastResult.textContent = 'Jerk, that is too high!';
         guessSubmit.value = 'Check again';
 
@@ -137,7 +148,7 @@ function checkGuess() {
     lives.className = 'circle';
     tries.appendChild(lives);
     }    
-
+    themeMusic.currentTime = 0;
     if (mute === false) themeMusic.play();
     lastResult.textContent = 'Please guess a number:';
     guessCount = 1;
