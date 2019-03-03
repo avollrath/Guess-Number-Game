@@ -1,4 +1,4 @@
-# the happy number game
+# the rude number game
 Just a simple and rude number guessing game
 
 # Demo
